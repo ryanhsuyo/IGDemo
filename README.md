@@ -1,15 +1,13 @@
-# 布魯斯前端 React仿Instagram教學 初始專案
+# Instagram練習
 
-## 如何使用此專案？
-
-1. 安裝依賴
+1. Install
 
 ```
 npm i
 
 ```
 
-2. 啟動專案
+2. Run
 
 ```
 
@@ -17,7 +15,7 @@ npm run start
 
 ```
 
-## 如何美化程式碼排版？
+## Beauty Code
 
 ```
 
@@ -25,7 +23,7 @@ npm run prettier
 
 ```
 
-## 如何啟動Json server？
+## Start Json server？
 
 ```
 
@@ -33,7 +31,7 @@ npm run server
 
 ```
 
-## 測試API格式
+## API Test
 
 ```
 file: db.json
