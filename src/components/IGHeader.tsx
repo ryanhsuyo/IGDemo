@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom"
+
 const IGHeader: React.FC = () => {
+    const go = useNavigate();
     return (
-        <header className="sticky top-0 bg-white border-b-[1px] border-gray-300">
-            <div className="flex justify-between items-center h-[40px] px-2 box-border lg:max-w-[1024px] lg:max:auto lg:px-0">
+        <header className="sticky top-0 bg-white border-b-[1px] border-gray-300 ">
+            <div className="flex justify-between items-center h-[40px] px-2 box-border lg:max-w-[1024px]  lg:mx-auto lg:px-0">
             {/* 左側 icon*/}
-            <img className="cursor-pointer w-[100px] " src="/images/logo.svg" alt="" />
+            <img className="cursor-pointer w-[100px] " src="/images/logo.svg" alt="" onClick={() => {go("/");
+            }}
+        />
             {/* 右側 導覽按鈕選項 */}
                 <div className="flex items-center">
                     <svg
@@ -12,6 +17,7 @@ const IGHeader: React.FC = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
+                        onClick={() => {go("/")}}
                     >
                         <path
                             strokeLinecap="round"
@@ -26,6 +32,7 @@ const IGHeader: React.FC = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
+                        onClick={() => {go("following")}}
                     >
                         <path
                             strokeLinecap="round"
@@ -34,14 +41,7 @@ const IGHeader: React.FC = () => {
                             d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
                         />
                     </svg>
-                    <div className="h-6 w-6 rounded-full bg-gray-900 text-white font-bold flex justify-center items-centerecho "# IGDemo" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/ryanhsuyo/IGDemo.git
-git push -u origin master">
-
+                    <div className="h-6 w-6 rounded-full bg-gray-900 text-white font-bold flex justify-center items-centerecho ">
                     </div>
                 </div>
             </div>
