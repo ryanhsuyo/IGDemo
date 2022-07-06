@@ -21,8 +21,7 @@ const IGPostList: React.FC = () => {
       </div>
     )
   }
-  {!isLoading && 
-    data?.map((item) => {
+  {!isLoading && data?.map((item) => {
     const {
       id,
       location,

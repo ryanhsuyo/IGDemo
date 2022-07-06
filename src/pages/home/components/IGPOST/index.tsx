@@ -28,7 +28,7 @@ const IGPost: React.FC<IGPostProps> = ({
         <div className="shadow-md pb-4 lg:mb-8">
             <div className=""></div>
             <IGUser account={account} location={location} avatar={avatar} />
-            <img src={photo} />
+            <img src={photo} alt=""/>
             <Comment
             account={account}
             likes={likes}

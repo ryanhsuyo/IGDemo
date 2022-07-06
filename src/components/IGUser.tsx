@@ -57,7 +57,7 @@ const IGUser: React.FC<IGUserProps> = memo(({
                 <p
                     className={`${
                         isFollowing ? "text-gray-700" : "text-blue-400"
-                    } ml-auto text-xs font-bold vurrsor-pointer`}
+                    } ml-auto text-xs font-bold cursor-pointer`}
                     onClick={followclickHandler}
             >
                 {isFollowing ? "Following" : "Follow"}
